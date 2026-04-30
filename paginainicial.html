@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .produto {
+            background: white;
+            border-radius: 8px;
+            margin: 15px;
+            padding: 15px;
+            width: 250px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .produto img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .produto h3 {
+            margin: 10px 0;
+        }
+        .preco {
+            color: #27ae60;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>loja de testes</h1>
+    <p>testes de vendas </p>
+</header>
+
+<div class="container">
+
+    <div class="produto">
+        <img src="download.jpeg" alt="Produto 1">
+        <h3>blusao preto sem capuz</h3>
+        <p class="preco">R$ 22,00</p>
+        <button onclick="comprar('Produto 1')">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="img1.jpeg" alt="Produto 2">
+        <h3>blusa amarela com capuz</h3>
+        <p class="preco">R$ 22,00</p>
+        <button onclick="comprar('Produto 2')">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="img3.jpeg" alt="Produto 3">
+        <h3>blusa preta com capuz</h3>
+        <p class="preco">R$ 22,00</p>
+        <button onclick="comprar('Produto 3')">Comprar</button>
+    </div>
+
+</div>
+
+<script>
+    function comprar(produto) {
+        alert("produto indisponivel");
+    }
+</script>
+
+</body>
+</html>
